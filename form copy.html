@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egodiva-Marketing</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" sizes="192x192" href="./assets/img/pc/android-chrome-512x512.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400&family=Noto+Sans+JP:wght@300;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function fadeAnimation() {
+                $(".fadein").each(function () {
+                    var bottom_element = $(this).offset().top + ($(window).height() / 3.5);
+                    var bottom_window = $(window).scrollTop() + $(window).height();
+
+                    if (bottom_window >= bottom_element) {
+                        $(this).addClass("fade_on");
+                    }
+                })
+            }
+
+            $(window).on('load', function () {
+                fadeAnimation();
+            })
+
+            $(window).scroll(function () {
+                fadeAnimation();
+            });
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="l-wrapper">
+        <header class="c-header" id="top">
+            <div class="c-header__block">
+                <div class="c-header__logo">
+                    <img src="./assets/img/pc/Logo.png" alt="">
+                </div>
+            </div>
+        </header>
+
+        <nav class="c-nav">
+            <div class="c-nav__main">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="./#service" class="c-nav__link">私たちの特徴</a></li>
+                    <li class="c-nav__item"><a href="./#strength" class="c-nav__link">他社との違い</a></li>
+                    <li class="c-nav__item"><a href="./#result" class="c-nav__link">取り組み実績</a></li>
+                    <li class="c-nav__item"><a href="./#conclude" class="c-nav__link">お問合せ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="l-main">
+            <div class="p-contact c-bkg">
+                <div class="p-contact__title">
+                    <div class="p-contact__title--head">社長呼び出しフォーム
+                        <div class="p-contact__title--head--line"></div>
+                    </div>
+
+                    <div class="p-contact__title--caution"><span class="star">*</span>は必須項目です</div>
+                </div>
+                <form action="">
+                    <ul class="p-contact__list">
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">企業名<span class="star">*</span></label>
+                            <input class="p-contact__list--item--input" type="text" size="30" required>
+                        </li>
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">ご担当者のお名前<span
+                                    class="star">*</span></label>
+                            <input class="p-contact__list--item--input" type="text" size="30" required>
+                        </li>
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">メールアドレス<span
+                                    class="star">*</span></label>
+                            <input class="p-contact__list--item--input" type="text" size="30" required>
+                        </li>
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">電話番号</label>
+                            <input class="p-contact__list--item--input" type="text" size="30">
+                        </li>
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">企業Webサイト</label>
+                            <input class="p-contact__list--item--input" type="text" size="30">
+                        </li>
+
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="">お問い合わせ項目</label>
+                            <select class="p-contact__list--item--input" id="" name="">
+                                <option value="one">まずはざっくばらんに相談をしたい</option>
+                                <option value="two">課題整理や訴求点の壁当てをしたい</option>
+                                <option value="three">具体的に依頼したいことがある</option>
+                                <option value="four">人生相談がある</option>
+                            </select>
+                        </li>
+
+                        <li class="p-contact__list--item "><label class="p-contact__list--item--label"
+                                for="">該当種別</label>
+                            <div class="p-contact__list--item--ckbox">
+                                <div class="p-contact__list--item--ckbox--item"><input type="checkbox" id="ck1"><label
+                                        for="ck1">インターネット広告関連</label></div>
+                                <div class="p-contact__list--item--ckbox--item"><input type="checkbox" id="ck2"><label
+                                        for="ck2">マーケティング関連</label></div>
+                                <div class="p-contact__list--item--ckbox--item"><input type="checkbox" id="ck3"><label
+                                        for="ck3">コンテンツ、クリエイティブ関連</label></div>
+                                <div class="p-contact__list--item--ckbox--item"><input type="checkbox" id="ck4"><label
+                                        for="ck4">効果検証、分析関連</label></div>
+                                <div class="p-contact__list--item--ckbox--item"><input type="checkbox" id="ck5"><label
+                                        for="ck5">その他</label></div>
+                            </div>
+                        </li>
+
+                        <li class="p-contact__list--item">
+                            <label class="p-contact__list--item--label" for="textarea">備考</label>
+                            <textarea class="p-contact__list--item--input" name="" id="" cols="35" rows="6"></textarea>
+                        </li>
+                        <div class="p-contact__btn">
+                            <input class="p-contact__submit" type="submit" value="送信" name="">
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </main>
+
+        <footer class="c-footer">
+            <div class="c-footer__block">
+                <ul class="c-footer__list">
+                    <li class="c-footer__list--item"><a href="#">HOME</a></li>
+                    <li class="c-footer__list--item"><a href="#">運営会社</a></li>
+                    <li class="c-footer__list--item"><a href="#">お問合せ</a></li>
+                </ul>
+                <div class="c-footer__license">2022 ©EgoDiva Allrights Reserved.</div>
+            </div>
+        </footer>
+    </div>
+</body>

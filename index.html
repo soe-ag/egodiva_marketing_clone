@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egodiva-Marketing</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" sizes="192x192" href="./assets/img/pc/android-chrome-512x512.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@300;400&family=Noto+Sans+JP:wght@300;700;900&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      function fadeAnimation() {
+        $('.fadein').each(function () {
+          var bottom_element = $(this).offset().top + ($(window).height() / 3);
+          var bottom_window = $(window).scrollTop() + $(window).height();
+
+          if (bottom_window >= bottom_element) {
+            $(this).addClass('fade_on');
+          }
+        })
+      }
+      $(window).scroll(function () {
+        fadeAnimation();
+      });
+
+      // $(window).on('load', function () {
+      //   fadeAnimation();
+      // })
+      fadeAnimation();
+      // $('p-top__block').addClass('fade_on');
+    })
+  </script>
+</head>
+
+<body>
+  <div class="l-wrapper">
+    <header class="c-header" id="top">
+      <div class="c-header__block">
+        <div class="c-header__logo">
+          <img src="./assets/img/pc/Logo.png" alt="">
+        </div>
+      </div>
+    </header>
+
+    <nav class="c-nav">
+      <div class="c-nav__main">
+        <ul class="c-nav__list">
+          <li class="c-nav__item"><a href="./#service" class="c-nav__link">私たちの特徴</a></li>
+          <li class="c-nav__item"><a href="./#strength" class="c-nav__link">他社との違い</a></li>
+          <li class="c-nav__item"><a href="./#result" class="c-nav__link">取り組み実績</a></li>
+          <li class="c-nav__item"><a href="./form.html" class="c-nav__link">お問合せ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="l-main">
+
+      <!-- --------------------------------------------0.top--------------------------------------------- -->
+      <div class="p-top c-bkg fadein">
+        <div class="p-top__block ">
+          <div class="p-top__flatbox">
+            <div class="p-top__title">
+              <div class="p-top__title--img"><img src="./assets/img/pc/top-title-pc.png" alt=""></div>
+              <div class="p-top__title--headline--pc">
+                <div>ちいさいけど、ぜんぶやれます。</div>
+              </div>
+              <div class="p-top__title--headline--sp">
+                <div>ちいさいけど、<br>ぜんぶやれます。</div>
+              </div>
+            </div>
+            <div class="p-top__img--pc">
+              <img src="./assets/img/pc/top_pc.png" alt="">
+            </div>
+            <div class="p-top__img--sp">
+              <img src="./assets/img/sp/img_KV_SP.png" alt="">
+            </div>
+          </div>
+          <div class="p-top__btn">
+            <a class="c-btn" href="form.html">
+              <div class="c-btn__inner--top">
+                <div class="c-btn__text">
+                  <div class="c-btn__text--main">EgoDivaに話しかける</div>
+                </div>
+                <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------1.service section---------------------------------- -->
+      <div class="c-section fadein" id="service">
+        <div class="c-section__bkgtext--blue">OUR SERVICE</div>
+        <div class="c-section__main">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--blue">EgoDivaができること</div>
+              <div class="c-section__title--black">行動と検証を</div>
+              <div class="c-section__title--bigblack">ちゃんと繰り返し、丁寧にそだてる。
+                <div class="c-section__title--bigblack--line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-service">
+              <div class="p-service__block">
+                <div class="p-service__img--pc"><img src="./assets/img/pc/img_pc.png" alt=""></div>
+                <div class="p-service__img--sp"><img src="./assets/img/sp/img_onestopsolution_SP.png" alt=""></div>
+                <div class="p-service__img--sp--c"><img src="./assets/img/sp/img_onestopsolution_Cards_SP_01.png"
+                    alt=""></div>
+                <div class="p-service__img--sp--c"><img src="./assets/img/sp/img_onestopsolution_Cards_SP_02.png"
+                    alt=""></div>
+                <div class="p-service__img--sp--c"><img src="./assets/img/sp/img_onestopsolution_Cards_SP_03.png"
+                    alt=""></div>
+                <div class="p-service__text">
+                  <div class="p-service__text--title">一社完結のワンストップソリューション</div>
+                  <div class="p-service__text--des">
+                    企画・実施・検証・改善提案のサイクルを確実に繰り返し、お客様のサービスや商材のマーケティングを循環させ育てていきます。企画〜実施までの制作領域、実施〜検証までのコミュニケーション領域、実施完了後の検証・改善領域、一連の流れを一社完結でお引き受けできることで、全体像を把握した、より最適なご提案や運用を実現できます。
+                    <br>「PDCA」という言葉は十数年前から主流になりましたが、マーケティング領域でPDCAを”本質的”に運用できている例はまだまだ多くはありません。まだまだ小さな組織ですが、小回りがききます。確実に仮説と検証を繰り返し、螺旋状にマーケティングの輪を広げていきます。
+                  </div>
+                </div>
+                <div class="p-service__btn">
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------2.strength section---------------------------------- -->
+      <div class="c-section c-bkg fadein" id="strength">
+        <div class="c-section__bkgtext">OUR STRENGTH</div>
+        <div class="c-section__main">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--blue">EGODIVAの強み</div>
+              <div class="c-section__title--black">他社さんとの違い</div>
+
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-strength">
+              <div class="p-strength__block">
+                <div class="p-strength__box1">
+                  <div class="p-strength__box1--title">他社さんとおなじ</div>
+                  <div class="p-strength__box1--ibox">
+                    <div class="p-strength__box1--ihead">サポート項目</div>
+                    <div class="p-strength__box1--ibody">
+                      <ul class="p-strength__box1--iblist">
+
+                        <li class="p-strength__box1--ibitem">
+                          <div class="p-strength__box1--ibitem--head">
+                            <div class="p-strength__box1--ibitem--himg"><img src="./assets/img/pc/icon_01.png" alt="">
+                            </div>
+                            <div class="p-strength__box1--ibitem--htitle">企画</div>
+                          </div>
+                          <ul class="p-strength__box1--ibitem--body">
+                            <li class=".p-strength__box1--ibitem--bitem">・与件整理</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・課題の抽出</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・目標/KPI設定</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・施策提案（コンテンツ・広告）</li>
+                          </ul>
+                        </li>
+
+                        <li class="p-strength__box1--ibitem">
+                          <div class="p-strength__box1--ibitem--head">
+                            <div class="p-strength__box1--ibitem--himg"><img src="./assets/img/pc/icon_02.png" alt="">
+                            </div>
+                            <div class="p-strength__box1--ibitem--htitle">実施</div>
+                          </div>
+                          <ul class="p-strength__box1--ibitem--body">
+                            <li class=".p-strength__box1--ibitem--bitem">・進行管理</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・コンテンツ設計</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・クリエイティブ制作</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・広告配信、運用</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・SNS運用、キャンペーン</li>
+                          </ul>
+                        </li>
+
+                        <li class="p-strength__box1--ibitem">
+                          <div class="p-strength__box1--ibitem--head">
+                            <div class="p-strength__box1--ibitem--himg"><img src="./assets/img/pc/icon_03.png" alt="">
+                            </div>
+                            <div class="p-strength__box1--ibitem--htitle">検証</div>
+                          </div>
+                          <ul class="p-strength__box1--ibitem--body">
+                            <li class=".p-strength__box1--ibitem--bitem">・検証ツール運用 </li>
+                            <li class=".p-strength__box1--ibitem--bitem">・レポーティング</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・レビュー、改善提案</li>
+                            <li class=".p-strength__box1--ibitem--bitem">・ネクストアクション実施</li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-strength__box2">
+                  <div class="p-strength__box2--title">他社さんとちがう!
+                    <div class="p-strength__box2--title--line"></div>
+                  </div>
+
+                  <div class="p-strength__box2--ibox">
+                    <div class="p-strength__box2--ibimg"><img src="./assets/img/pc/img_moyamoya_a.png" alt=""></div>
+                    <div class="p-strength__box2--ibtitlesub">\ とはさせません! /</div>
+                    <div class="p-strength__box2--ibtitle"><span>“一社完結”</span>だからこそ一部始終を把握できる体制</div>
+                    <div class="p-strength__box2--ibdes">
+                      <div class="p-strength__box2--ibdes--img"><img src="./assets/img/pc/image_features_01.png" alt="">
+                      </div>
+                      <div class="p-strength__box2--ibdes--text">
+                        企画、実施、検証、一連の流れの中で数社をまたいだ体制の場合、”コミュニケーションの二度手間”や、タイムロス、課題の取りこぼしがうまれます。
+                        <br>一社完結の体制だからこそ”一部始終”を把握し、より本質的なご提案を実現します。
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="p-strength__box2--ibox">
+                    <div class="p-strength__box2--ibimg"><img src="./assets/img/pc/img_moyamoya_b.png" alt=""></div>
+                    <div class="p-strength__box2--ibtitlesub">\ とはさせません! /</div>
+                    <div class="p-strength__box2--ibtitle"><span>“完全オーダーメイドプラン”</span>をご提案</div>
+                    <div class="p-strength__box2--ibdes">
+                      <div class="p-strength__box2--ibdes--img"><img src="./assets/img/pc/image_features_02.png" alt="">
+                      </div>
+                      <div class="p-strength__box2--ibdes--text">
+                        弊社では予算の大小関わらず、「まずお客様の解決すべき課題は何なのか」を一緒に見つけていきます。課題を明確にし、それを解決するために予算内でどんなプランニングが可能かの最善策を考え提案します。
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="p-strength__btn">
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------3.priority section---------------------------------- -->
+      <div class="c-section fadein" id="priority">
+        <div class="c-section__bkgtext--blue">OUR PRIORITY</div>
+        <div class="c-section__main">
+          <div class="c-section__head">
+            <div class="c-section__title">
+              <div class="c-section__title--blue">EgoDivaが大切にしていること</div>
+              <!-- <div class="c-section__title--black">行動と検証を</div> -->
+              <div class="c-section__title--bigblack">圧倒的本質主義
+                <div class="p-priority--line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-priority">
+              <div class="p-priority__block">
+                <div class="p-priority__img--pc"><img src="./assets/img/pc/priority_pc.png" alt=""></div>
+                <div class="p-priority__img--sp"><img src="./assets/img/sp/img_priority_SP.png" alt=""></div>
+                <div class="p-priority__text">
+                  <div class="p-priority__text--title">ユーザーの先にある景色を想像して作戦をたてます</div>
+                  <div class="p-priority__text--des">マーケティング戦略を考案する上で、常にEgoDivaはユーザーが見ている景色を想像しながら試行錯誤していきます。
+                    <br>例えば、ECサイトであれば「購入ユーザー自身」の属性にフォーカスした施策に目がいきがちですが、実は購入者と実際の利用者は別々だった、ということは珍しくありません。また、先入観から新たなターゲット層を見過ごすこともあり、「禁煙希望者をターゲティングしていたけど、実はその隣にいる「夫に禁煙してほしい妻」の方がCVRが高かった。という事例もあります。弊社では常に現状を見つめ続け、新たな発見や発掘を繰り返すことでクライアントさまご自身も知らなかった新しいエンドユーザーや商材のPRポイントがご提案できると思っています。
+                  </div>
+                </div>
+                <div class="p-priority__btn">
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------4.result section------------------------------------ -->
+      <div class="c-section c-bkg fadein" id="result">
+        <div class="c-section__bkgtext">OUR RESULTS</div>
+        <div class="c-section__main">
+          <div class="c-section__head">
+            <div class="c-section__title">
+
+              <div class="c-section__title--black">お取り組み実績</div>
+
+            </div>
+          </div>
+          <div class="c-sectoin__body">
+            <div class="p-result">
+              <div class="p-result__block">
+
+                <div class="p-result__box">
+                  <div class="p-result__box--title">SNS広告運用</div>
+                  <div class="p-result__box--contents">
+                    <div class="p-result__box--detail">
+                      <div class="p-result__box--detail--img">
+                        <img src="./assets/img/pc/icon_result_install.png" alt="">
+                      </div>
+                      <ul class="p-result__box--detail--table">
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">案件商材：女性向けアプリケーション</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">実施媒体：Twitter、Tiktok</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">施策目的：アプリインストール数促進</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">施策内容：Twitter広告、Tiktok広告</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">KPI：CPI（インストール単価）</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg" id="lastbullet"><img
+                              src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt" id="txt2lines">改善ポイント：ターゲットに最適化したターゲティング設定の見直し
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-result__box--attention">
+                      <div class="p-result__box--attbar">
+                        <img src="./assets/img/pc/bar1.png" alt="">
+                      </div>
+                      <div class="p-result__box--atttext">
+                        <div class="p-result__box--attblack">達成率</div>
+                        <div class="p-result__box--attimg1"><img src="./assets/img/pc/200.png" alt=""></div>
+                        <div class="p-result__box--attimg2"><img src="./assets/img/pc/icon_Vsign.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-result__box">
+                  <div class="p-result__box--title">SNS公式アカウント運用 </div>
+                  <div class="p-result__box--contents">
+                    <div class="p-result__box--detail">
+                      <div class="p-result__box--detail--img">
+                        <img src="./assets/img/pc/icon_result_shop.png" alt="">
+                      </div>
+                      <ul class="p-result__box--detail--table">
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">案件商材：生活用品EC</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">実施媒体：LINE公式アカウント</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">施策目的：EC注文件数増加</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">施策内容：月4回のプッシュメッセージ配信</div>
+                        </li>
+                        <li class="p-result__box--detail--items">
+                          <div class="p-result__box--detail-itemimg"><img src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt">KPI：1,500件 / 月</div>
+                        </li>
+                        <li class="p-result__box--detail--items2">
+                          <div class="p-result__box--detail-itemimg" id="lastbullet2"><img
+                              src="./assets/img/pc/icon_bullet.png" alt="">
+                          </div>
+                          <div class="p-result__box--detail-itemtxt" id="txt2lines2">改善ポイント：商品の訴求をユーザー利用シーンの視点にたった<span
+                              id="txt2lines2extra">クリエイティブ、コピーに変更</span>
+                          </div>
+                          <div class="p-result__box--detail-itemtxt2">クリエイティブ、コピーに変更</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="p-result__box--attention">
+                      <div class="p-result__box--attbar">
+                        <img src="./assets/img/pc/bar2.png" alt="">
+                      </div>
+                      <div class="p-result__box--atttext">
+                        <div class="p-result__box--attblack">達成率</div>
+                        <div class="p-result__box--attimg1"><img src="./assets/img/pc/108.png" alt=""></div>
+                        <div class="p-result__box--attimg2"><img src="./assets/img/pc/icon_Vsign.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-result__btn">
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------client-------------------------------------------- -->
+      <div class="p-client fadein">
+        <div class="p-client__block">
+          <h1 class="p-client__title">お取引企業様</h1>
+          <ul class="p-client__list">
+            <li class="p-client__item"><img src="./assets/img/pc/img_clients_dmm.png" alt=""></li>
+            <li class="p-client__item"><img src="./assets/img/pc/img_clients_geniee.png" alt=""></li>
+            <li class="p-client__item"><img src="./assets/img/pc/img_clients_gmo.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------5.conclude section-------------------------------- -->
+      <div class="c-section-80 c-bkg fadein" id="conclude">
+        <div class="c-section__bkgtext">WE ARE HERE</div>
+        <div class="c-section__main">
+
+          <div class="c-sectoin__body">
+            <div class="p-conclude">
+              <div class="p-conclude__block">
+                <div class="p-conclude__flatbox">
+                  <div class="p-conclude__img"><img src="./assets/img/pc/conclude.png" alt=""></div>
+                  <div class="p-conclude__text">
+                    <div class="p-conclude__text--title">未来を一緒に <br>つくりましょう。</div>
+                    <div class="p-conclude__text--des">どんな施策をすべきか方向性が決まっていなくても、<br> お気軽にEgoDivaを呼び出してください。<br>
+                      「課題はなに？」というところから一緒に見つけていきましょう。</div>
+                  </div>
+                </div>
+                <div class="p-conclude__btn">
+                  <div class="p-conclude__btn--caption">マーケティングのご相談はEgoDivaスタッフまで</div>
+                  <a class="c-btn" href="form.html">
+                    <div class="c-btn__inner">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_click_default.png" alt=""></div>
+                        <div class="c-btn__icon--off"><img src="./assets/img/pc/btn_icon_click.png" alt=""></div>
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">EgoDiva呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※1営業日以内にオンラインから現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="p-conclude__btn2">
+                  <div class="p-conclude__btn--caption">人生相談や恋の相談は社長の臼杵まで</div>
+                  <a class="c-btn" href="ceoform.html">
+                    <div class="c-btn__inner--green">
+                      <div class="c-btn__icon">
+                        <div class="c-btn__icon--on"><img src="./assets/img/pc/btn_icon_ceo.png" alt=""></div>
+
+                      </div>
+                      <div class="c-btn__text">
+                        <div class="c-btn__text--main">社長呼び出しボタンを押す</div>
+                        <div class="c-btn__text--sub">※気まぐれに現れます</div>
+                      </div>
+                      <div class="c-btn__arrow"><img src="./assets/img/pc/play_circle_green.png" alt=""></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="c-footer">
+      <div class="c-footer__block">
+        <ul class="c-footer__list">
+          <li class="c-footer__list--item"><a href="./index.html">HOME</a></li>
+          <li class="c-footer__list--item"><a href="#">運営会社</a></li>
+          <li class="c-footer__list--item"><a href="./form.html">お問合せ</a></li>
+        </ul>
+        <div class="c-footer__license">2022 ©EgoDiva Allrights Reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
